@@ -4,13 +4,28 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class StockItem {
-    private final UUID id;
-    private final String name;
-    private final int quantity;
+    private UUID id;
+    private String name;
+    private int quantity;
+
+    public StockItem() {
+    }
 
     public StockItem(UUID id, String name, int quantity) {
         this.id = id;
         this.name = name;
+        this.quantity = quantity;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 

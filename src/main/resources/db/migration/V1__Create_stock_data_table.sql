@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS stock_data (
+    id UUID PRIMARY KEY NOT NULL,
+    name STRING UNIQUE NOT NULL,
+    quantity INT NOT NULL
+    );
